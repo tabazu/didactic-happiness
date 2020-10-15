@@ -14,5 +14,5 @@ def getrank():
     title = music.select_one('span.chart-element__information__song')
     music_title=title.text.strip()
     artist = music.select_one('span.chart-element__information__artist')
-    tweet='1 위 '+music_title+artist.text
+    tweet='1 . '+music_title+artist.text
     return tweet
