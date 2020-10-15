@@ -1,4 +1,5 @@
 import tweet
+import music
 
 def main():
     rank=getrank()
