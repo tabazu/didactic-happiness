@@ -13,5 +13,5 @@ def getrank():
     title = music.select_one('#frm > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > div > div > div.ellipsis.rank01 > span > a')
     music_title=title.text.strip()
     artist = music.select_one('#frm > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > div > div > div.ellipsis.rank02 > a')
-    tweet='1 . '+music_title+artist.text
+    tweet='1 . '+music_title+' '+artist.text
     return tweet
